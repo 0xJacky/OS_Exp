@@ -56,12 +56,15 @@ double getReadSpeed() {
     close(fd); //读完毕后关闭文件
     printf("Read:%ld bytes to %s\n", sizeReaded, filename);
     gettimeofday(&readEndTime, NULL);
-    // 删除测试文件
-    if (access(filename, 0) == 0 && unlink(filename) != 0) {
-        perror("unlink");
-    }
     
     timeElapse = getTimeElapse(readStartTime, readEndTime);
     
     return transSpeed(sizeReaded, timeElapse);
+}
+
+void deleteTestFile() {
+    // 删除测试文件
+    if (access(filename, 0) == 0 && unlink(filename) != 0) {
+        perror("unlink");
+    }
 }

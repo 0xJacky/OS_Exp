@@ -20,5 +20,6 @@ double getTimeElapse(struct timeval, struct timeval);
 double transSpeed(ssize_t, double);
 double getWriteSpeed(void);
 double getReadSpeed(void);
+void deleteTestFile(void);
 
 #endif /* IOTask_h */

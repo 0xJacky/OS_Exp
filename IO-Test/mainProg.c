@@ -19,6 +19,7 @@ int main(int argc, char *argv[]){
     }
     writeSpeed /= N;
     readSpeed /= N;
+    deleteTestFile();
     printf("Write Speed: %fMB/s, Read Speed: %fMB/s\n", writeSpeed, readSpeed);
     return 0;
 }
