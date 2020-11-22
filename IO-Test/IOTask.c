@@ -6,9 +6,8 @@
 //
 
 #include "IOTask.h"
-#define BUFFER_SIZE (1024*1024*1024)
 
-char filename[] = "aFile"; //即将创建和打开的文件名
+char filename[] = "IOTest"; //即将创建和打开的文件名
 
 double getTimeElapse(struct timeval start, struct timeval end) {
     return (double) (end.tv_sec - start.tv_sec) * 1000.0 + (double) (end.tv_usec - start.tv_usec) / 1000.0;
@@ -22,7 +21,6 @@ double getWriteSpeed() {
     char *bufForReadWrite = (char *) malloc(BUFFER_SIZE);
     double timeElapse = 0.0;
     struct timeval writeStartTime, writeEndTime;
-    gettimeofday(&writeStartTime, NULL);
     int fd; //用于存放open函数返回的文件描述符
     
     fd = open(filename, O_RDWR | O_CREAT, 0644);//创建并打开文件，可读可写，创建权限为644
@@ -31,10 +29,12 @@ double getWriteSpeed() {
         perror("Unable to create file");
         return -1;
     }
+    gettimeofday(&writeStartTime, NULL);
     ssize_t sizeWrited = write(fd, (void *) bufForReadWrite, BUFFER_SIZE);
+    gettimeofday(&writeEndTime, NULL);
     printf("Write:%ld bytes to %s\n", sizeWrited, filename);
     close(fd); //写入完毕后关闭文件
-    gettimeofday(&writeEndTime, NULL);
+    free(bufForReadWrite);
     timeElapse = getTimeElapse(writeStartTime, writeEndTime);
     
     return transSpeed(sizeWrited, timeElapse);
@@ -53,9 +53,10 @@ double getReadSpeed() {
     }
     gettimeofday(&readStartTime, NULL);
     ssize_t sizeReaded = read(fd, (void *) bufForReadWrite, BUFFER_SIZE);
-    close(fd); //读完毕后关闭文件
-    printf("Read:%ld bytes to %s\n", sizeReaded, filename);
     gettimeofday(&readEndTime, NULL);
+    close(fd); //读完毕后关闭文件
+    free(bufForReadWrite);
+    printf("Read:%ld bytes from %s\n", sizeReaded, filename);
     
     timeElapse = getTimeElapse(readStartTime, readEndTime);
     

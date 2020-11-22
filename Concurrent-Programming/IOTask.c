@@ -20,5 +20,8 @@ void executeIOTask() {
     printf("write:%lu bytes to file:%s\n", writeSize, fileName);
     free(fileBuf);
     close(fileFd);
+    if (access(fileName, 0) == 0 && unlink(fileName) != 0) {
+        perror("unlink");
+    }
 }
 

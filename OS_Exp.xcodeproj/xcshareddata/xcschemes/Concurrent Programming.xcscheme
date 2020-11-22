@@ -34,6 +34,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      debugAsWhichUser = "root"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -42,7 +43,7 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         FilePath = "/Users/Jacky/Projects/OS-Exp/exp2-concurrent_programming/mainProg">
+         FilePath = "/Users/Jacky/Documents/Projects/OS_Exp/Concurrent-Programming/mainProg">
       </PathRunnable>
    </LaunchAction>
    <ProfileAction

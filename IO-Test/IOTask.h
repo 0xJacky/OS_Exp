@@ -8,6 +8,7 @@
 #ifndef IOTask_h
 #define IOTask_h
 
+#define BUFFER_SIZE (1024*1024*1024)
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
