@@ -94,9 +94,8 @@ int main(int argc, char *argv[]) {
     } else {
         int p;
         for (int i = 0; i < childProcessNum; i++) {
-            wait(&p);
             // 接收退出状态区分进程的结束时间
-            p = WEXITSTATUS(p);
+            wait(&p);
             //printf("%d\n", p);
             if (p == 1) {
                 // IO 进程结束时间

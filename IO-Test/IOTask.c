@@ -31,6 +31,7 @@ double getWriteSpeed() {
     }
     gettimeofday(&writeStartTime, NULL);
     ssize_t sizeWrited = write(fd, (void *) bufForReadWrite, BUFFER_SIZE);
+    fsync(fd);
     gettimeofday(&writeEndTime, NULL);
     printf("Write:%ld bytes to %s\n", sizeWrited, filename);
     close(fd); //写入完毕后关闭文件
@@ -53,6 +54,7 @@ double getReadSpeed() {
     }
     gettimeofday(&readStartTime, NULL);
     ssize_t sizeReaded = read(fd, (void *) bufForReadWrite, BUFFER_SIZE);
+    fsync(fd);
     gettimeofday(&readEndTime, NULL);
     close(fd); //读完毕后关闭文件
     free(bufForReadWrite);
