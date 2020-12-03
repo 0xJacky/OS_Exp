@@ -18,7 +18,7 @@ double transSpeed(ssize_t size, double t) {
 }
 
 double getWriteSpeed() {
-    char *bufForReadWrite = (char *) malloc(BUFFER_SIZE);
+    void * bufForReadWrite = malloc(BUFFER_SIZE);
     double timeElapse = 0.0;
     struct timeval writeStartTime, writeEndTime;
     int fd; //用于存放open函数返回的文件描述符
@@ -30,7 +30,7 @@ double getWriteSpeed() {
         return -1;
     }
     gettimeofday(&writeStartTime, NULL);
-    ssize_t sizeWrited = write(fd, (void *) bufForReadWrite, BUFFER_SIZE);
+    ssize_t sizeWrited = write(fd, bufForReadWrite, BUFFER_SIZE);
     fsync(fd);
     gettimeofday(&writeEndTime, NULL);
     printf("Write:%ld bytes to %s\n", sizeWrited, filename);
@@ -42,7 +42,7 @@ double getWriteSpeed() {
 }
 
 double getReadSpeed() {
-    char *bufForReadWrite = (char *) malloc(BUFFER_SIZE);
+    void *bufForReadWrite = malloc(BUFFER_SIZE);
     double timeElapse = 0.0;
     int fd; //用于存放open函数返回的文件描述符
     struct timeval readStartTime, readEndTime;
@@ -53,7 +53,7 @@ double getReadSpeed() {
         return -1;
     }
     gettimeofday(&readStartTime, NULL);
-    ssize_t sizeReaded = read(fd, (void *) bufForReadWrite, BUFFER_SIZE);
+    ssize_t sizeReaded = read(fd, bufForReadWrite, BUFFER_SIZE);
     fsync(fd);
     gettimeofday(&readEndTime, NULL);
     close(fd); //读完毕后关闭文件
