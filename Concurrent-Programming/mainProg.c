@@ -81,7 +81,7 @@ int main(int argc, char *argv[]) {
             printf("This is a IO task, pid:%d parent pid:%d\n", getpid(),
                    getppid());//Print process ID and parent process ID
             // 返回状态
-            exit(1);
+            exit(3);
         }
         // 计算进程执行
         if (curTask->taskType == COMPUTE_TASK) {
@@ -89,15 +89,16 @@ int main(int argc, char *argv[]) {
             printf("This is a compute task, pid:%d parent pid:%d\n", getpid(),
                    getppid());//Print process ID and parent process ID
             // 返回状态
-            exit(2);
+            exit(5);
         }
     } else {
         int p;
         for (int i = 0; i < childProcessNum; i++) {
             // 接收退出状态区分进程的结束时间
             wait(&p);
+            p = WEXITSTATUS(p);
             //printf("%d\n", p);
-            if (p == 1) {
+            if (p == 3) {
                 // IO 进程结束时间
                 gettimeofday(&IOTaskEndTime, NULL);
             } else {

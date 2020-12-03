@@ -8,7 +8,6 @@ void executeComputeTask() {
     size_t idx = 0;
     size_t loopSize = LOOP_SIZE;
     size_t sum = 0;
-
     for (idx = 0; idx < loopSize; ++idx) {
         sum += idx;
     }
