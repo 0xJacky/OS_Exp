@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "858872A525664E7F00A28885"
-               BuildableName = "IO-Test"
-               BlueprintName = "IO-Test"
+               BlueprintIdentifier = "85D0884E25821743003A0069"
+               BuildableName = "Process-Readers-and-Writers"
+               BlueprintName = "Process-Readers-and-Writers"
                ReferencedContainer = "container:OS_Exp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      debugAsWhichUser = "root"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -43,7 +42,7 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         FilePath = "/Users/Jacky/Documents/Projects/OS_Exp/IO-Test/mainProg">
+         FilePath = "/Users/Jacky/Documents/Projects/OS_Exp/Process-Readers-and-Writers/mainProg">
       </PathRunnable>
    </LaunchAction>
    <ProfileAction
@@ -55,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858872A525664E7F00A28885"
-            BuildableName = "IO-Test"
-            BlueprintName = "IO-Test"
+            BlueprintIdentifier = "85D0884E25821743003A0069"
+            BuildableName = "Process-Readers-and-Writers"
+            BlueprintName = "Process-Readers-and-Writers"
             ReferencedContainer = "container:OS_Exp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

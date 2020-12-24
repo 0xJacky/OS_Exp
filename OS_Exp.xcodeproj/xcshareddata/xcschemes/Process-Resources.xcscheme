@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "858872A525664E7F00A28885"
-               BuildableName = "IO-Test"
-               BlueprintName = "IO-Test"
+               BlueprintIdentifier = "856D4F2F2581FBFB00F0D1AD"
+               BuildableName = "Process-Resources"
+               BlueprintName = "Process-Resources"
                ReferencedContainer = "container:OS_Exp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,7 +43,7 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         FilePath = "/Users/Jacky/Documents/Projects/OS_Exp/IO-Test/mainProg">
+         FilePath = "/Users/Jacky/Documents/Projects/OS_Exp/Process-Resources/mainProg">
       </PathRunnable>
    </LaunchAction>
    <ProfileAction
@@ -55,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "858872A525664E7F00A28885"
-            BuildableName = "IO-Test"
-            BlueprintName = "IO-Test"
+            BlueprintIdentifier = "856D4F2F2581FBFB00F0D1AD"
+            BuildableName = "Process-Resources"
+            BlueprintName = "Process-Resources"
             ReferencedContainer = "container:OS_Exp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

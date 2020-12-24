@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8588724025662D8700A28885 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8588723F25662D8700A28885 /* main.c */; };
-		8588729C256633C100A28885 /* ComputeTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 85887280256631D200A28885 /* ComputeTask.c */; };
-		8588729D256633C100A28885 /* IOTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 85887283256631D300A28885 /* IOTask.c */; };
-		8588729E256633C100A28885 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 85887282256631D200A28885 /* mainProg.c */; };
-		858872B32566519500A28885 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 858872AD25664F3000A28885 /* mainProg.c */; };
-		858872B42566519500A28885 /* IOTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 858872AF25664F4C00A28885 /* IOTask.c */; };
+		85D0886A25824FFD003A0069 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 85D0882C258216D0003A0069 /* writer.c */; };
+		85D0886B25824FFD003A0069 /* utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 85D0882D258216D0003A0069 /* utilities.c */; };
+		85D0886C25824FFD003A0069 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 85D08831258216D0003A0069 /* mainProg.c */; };
+		85D0886D25824FFD003A0069 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 85D0883A258216D0003A0069 /* reader.c */; };
+		85D0886E25824FFD003A0069 /* Consumer.c in Sources */ = {isa = PBXBuildFile; fileRef = 856D4F3E2581FD3800F0D1AD /* Consumer.c */; };
+		85D0886F25824FFD003A0069 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 856D4F3B2581FD3800F0D1AD /* mainProg.c */; };
+		85D0887025824FFD003A0069 /* Producer.c in Sources */ = {isa = PBXBuildFile; fileRef = 856D4F3C2581FD3800F0D1AD /* Producer.c */; };
+		85D0887125824FFD003A0069 /* ProducerConsumerUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 856D4F392581FD3800F0D1AD /* ProducerConsumerUtilities.c */; };
+		85D0887225824FFD003A0069 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 85851F3E2578C1D8006FC4F0 /* mainProg.c */; };
+		85D0887325824FFD003A0069 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 858872AD25664F3000A28885 /* mainProg.c */; };
+		85D0887425824FFD003A0069 /* IOTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 858872AF25664F4C00A28885 /* IOTask.c */; };
+		85D0887525824FFD003A0069 /* ComputeTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 85887280256631D200A28885 /* ComputeTask.c */; };
+		85D0887625824FFD003A0069 /* IOTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 85887283256631D300A28885 /* IOTask.c */; };
+		85D0887725824FFD003A0069 /* mainProg.c in Sources */ = {isa = PBXBuildFile; fileRef = 85887282256631D200A28885 /* mainProg.c */; };
+		85D0887825824FFD003A0069 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8588723F25662D8700A28885 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +37,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		856D4F382581FD3800F0D1AD /* Producer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Producer.h; sourceTree = "<group>"; };
+		856D4F392581FD3800F0D1AD /* ProducerConsumerUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ProducerConsumerUtilities.c; sourceTree = "<group>"; };
+		856D4F3A2581FD3800F0D1AD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		856D4F3B2581FD3800F0D1AD /* mainProg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mainProg.c; sourceTree = "<group>"; };
+		856D4F3C2581FD3800F0D1AD /* Producer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Producer.c; sourceTree = "<group>"; };
+		856D4F3D2581FD3800F0D1AD /* Consumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Consumer.h; sourceTree = "<group>"; };
+		856D4F3E2581FD3800F0D1AD /* Consumer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Consumer.c; sourceTree = "<group>"; };
+		856D4F3F2581FD3800F0D1AD /* ProducerConsumerUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducerConsumerUtilities.h; sourceTree = "<group>"; };
+		85851F3E2578C1D8006FC4F0 /* mainProg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mainProg.c; sourceTree = "<group>"; };
+		85851F3F2578C1E6006FC4F0 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		85851F432578C307006FC4F0 /* mainProg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainProg.h; sourceTree = "<group>"; };
 		8588723C25662D8700A28885 /* OS_Exp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OS_Exp; sourceTree = BUILT_PRODUCTS_DIR; };
 		8588723F25662D8700A28885 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8588727E256631D200A28885 /* ComputeTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputeTask.h; sourceTree = "<group>"; };
@@ -42,6 +62,14 @@
 		858872AD25664F3000A28885 /* mainProg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mainProg.c; sourceTree = "<group>"; };
 		858872AE25664F4C00A28885 /* IOTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOTask.h; sourceTree = "<group>"; };
 		858872AF25664F4C00A28885 /* IOTask.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IOTask.c; sourceTree = "<group>"; };
+		85D0882C258216D0003A0069 /* writer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		85D0882D258216D0003A0069 /* utilities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utilities.c; sourceTree = "<group>"; };
+		85D08831258216D0003A0069 /* mainProg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mainProg.c; sourceTree = "<group>"; };
+		85D08832258216D0003A0069 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		85D08833258216D0003A0069 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		85D08836258216D0003A0069 /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		85D08838258216D0003A0069 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		85D0883A258216D0003A0069 /* reader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +83,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		856099FC2578C104008987D6 /* Memory-Management */ = {
+			isa = PBXGroup;
+			children = (
+				85851F3E2578C1D8006FC4F0 /* mainProg.c */,
+				85851F3F2578C1E6006FC4F0 /* Makefile */,
+				85851F432578C307006FC4F0 /* mainProg.h */,
+			);
+			path = "Memory-Management";
+			sourceTree = "<group>";
+		};
+		856D4F372581FD0000F0D1AD /* Process-Resources */ = {
+			isa = PBXGroup;
+			children = (
+				856D4F3E2581FD3800F0D1AD /* Consumer.c */,
+				856D4F3D2581FD3800F0D1AD /* Consumer.h */,
+				856D4F3B2581FD3800F0D1AD /* mainProg.c */,
+				856D4F3A2581FD3800F0D1AD /* Makefile */,
+				856D4F3C2581FD3800F0D1AD /* Producer.c */,
+				856D4F382581FD3800F0D1AD /* Producer.h */,
+				856D4F392581FD3800F0D1AD /* ProducerConsumerUtilities.c */,
+				856D4F3F2581FD3800F0D1AD /* ProducerConsumerUtilities.h */,
+			);
+			path = "Process-Resources";
+			sourceTree = "<group>";
+		};
 		8588723325662D8700A28885 = {
 			isa = PBXGroup;
 			children = (
+				85D0882B258216D0003A0069 /* Process-Readers-and-Writers */,
+				856D4F372581FD0000F0D1AD /* Process-Resources */,
+				856099FC2578C104008987D6 /* Memory-Management */,
 				858872AA25664E8800A28885 /* IO-Test */,
 				858872A425664D3100A28885 /* README.md */,
 				858872A0256634DC00A28885 /* .gitignore */,
@@ -107,9 +163,52 @@
 			path = "IO-Test";
 			sourceTree = "<group>";
 		};
+		85D0882B258216D0003A0069 /* Process-Readers-and-Writers */ = {
+			isa = PBXGroup;
+			children = (
+				85D0882C258216D0003A0069 /* writer.c */,
+				85D0882D258216D0003A0069 /* utilities.c */,
+				85D08831258216D0003A0069 /* mainProg.c */,
+				85D08832258216D0003A0069 /* Makefile */,
+				85D08833258216D0003A0069 /* reader.h */,
+				85D08836258216D0003A0069 /* utilities.h */,
+				85D08838258216D0003A0069 /* writer.h */,
+				85D0883A258216D0003A0069 /* reader.c */,
+			);
+			path = "Process-Readers-and-Writers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
+		856099F72578C0FA008987D6 /* Memory-Management */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 856099FA2578C0FA008987D6 /* Build configuration list for PBXLegacyTarget "Memory-Management" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/Jacky/Documents/Projects/OS_Exp/Memory-Management";
+			dependencies = (
+			);
+			name = "Memory-Management";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Memory-Management";
+		};
+		856D4F2F2581FBFB00F0D1AD /* Process-Resources */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 856D4F322581FBFB00F0D1AD /* Build configuration list for PBXLegacyTarget "Process-Resources" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/Jacky/Documents/Projects/OS_Exp/Process-Resources";
+			dependencies = (
+			);
+			name = "Process-Resources";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Process-Resources";
+		};
 		85887279256630F100A28885 /* Concurrent Programming */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
@@ -138,6 +237,20 @@
 			passBuildSettingsInEnvironment = 1;
 			productName = "File-permissions-and-IO-operations";
 		};
+		85D0884E25821743003A0069 /* Process-Readers-and-Writers */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 85D0884F25821743003A0069 /* Build configuration list for PBXLegacyTarget "Process-Readers-and-Writers" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/Jacky/Documents/Projects/OS_Exp/Process-Readers-and-Writers";
+			dependencies = (
+			);
+			name = "Process-Readers-and-Writers";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Process-Readers-and-Writers";
+		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
@@ -164,8 +277,14 @@
 		8588723425662D8700A28885 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					856099F72578C0FA008987D6 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					856D4F2F2581FBFB00F0D1AD = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					8588723B25662D8700A28885 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -173,6 +292,9 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					858872A525664E7F00A28885 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					85D0884E25821743003A0069 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -193,6 +315,9 @@
 				8588723B25662D8700A28885 /* OS_Exp */,
 				85887279256630F100A28885 /* Concurrent Programming */,
 				858872A525664E7F00A28885 /* IO-Test */,
+				856099F72578C0FA008987D6 /* Memory-Management */,
+				856D4F2F2581FBFB00F0D1AD /* Process-Resources */,
+				85D0884E25821743003A0069 /* Process-Readers-and-Writers */,
 			);
 		};
 /* End PBXProject section */
@@ -202,18 +327,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				858872B32566519500A28885 /* mainProg.c in Sources */,
-				858872B42566519500A28885 /* IOTask.c in Sources */,
-				8588729C256633C100A28885 /* ComputeTask.c in Sources */,
-				8588729D256633C100A28885 /* IOTask.c in Sources */,
-				8588729E256633C100A28885 /* mainProg.c in Sources */,
-				8588724025662D8700A28885 /* main.c in Sources */,
+				85D0886A25824FFD003A0069 /* writer.c in Sources */,
+				85D0886B25824FFD003A0069 /* utilities.c in Sources */,
+				85D0886C25824FFD003A0069 /* mainProg.c in Sources */,
+				85D0886D25824FFD003A0069 /* reader.c in Sources */,
+				85D0886E25824FFD003A0069 /* Consumer.c in Sources */,
+				85D0886F25824FFD003A0069 /* mainProg.c in Sources */,
+				85D0887025824FFD003A0069 /* Producer.c in Sources */,
+				85D0887125824FFD003A0069 /* ProducerConsumerUtilities.c in Sources */,
+				85D0887225824FFD003A0069 /* mainProg.c in Sources */,
+				85D0887325824FFD003A0069 /* mainProg.c in Sources */,
+				85D0887425824FFD003A0069 /* IOTask.c in Sources */,
+				85D0887525824FFD003A0069 /* ComputeTask.c in Sources */,
+				85D0887625824FFD003A0069 /* IOTask.c in Sources */,
+				85D0887725824FFD003A0069 /* mainProg.c in Sources */,
+				85D0887825824FFD003A0069 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		856099F82578C0FA008987D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		856099F92578C0FA008987D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		856D4F302581FBFB00F0D1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		856D4F312581FBFB00F0D1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8588724125662D8700A28885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +512,7 @@
 		8588724425662D8700A28885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -336,6 +521,7 @@
 		8588724525662D8700A28885 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -391,9 +577,52 @@
 			};
 			name = Release;
 		};
+		85D0885025821743003A0069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85D0885125821743003A0069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		856099FA2578C0FA008987D6 /* Build configuration list for PBXLegacyTarget "Memory-Management" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856099F82578C0FA008987D6 /* Debug */,
+				856099F92578C0FA008987D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856D4F322581FBFB00F0D1AD /* Build configuration list for PBXLegacyTarget "Process-Resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856D4F302581FBFB00F0D1AD /* Debug */,
+				856D4F312581FBFB00F0D1AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8588723725662D8700A28885 /* Build configuration list for PBXProject "OS_Exp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -426,6 +655,15 @@
 			buildConfigurations = (
 				858872A725664E7F00A28885 /* Debug */,
 				858872A825664E7F00A28885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D0884F25821743003A0069 /* Build configuration list for PBXLegacyTarget "Process-Readers-and-Writers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D0885025821743003A0069 /* Debug */,
+				85D0885125821743003A0069 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
