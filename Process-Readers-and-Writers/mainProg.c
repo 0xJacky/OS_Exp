@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
     // 输入 q 退出
     do {
         char aChar = getchar();
-        if (aChar == 'q') {
+        if (aChar == 'q' || aChar == 'Q') {
             bookMgr->exit_flag = 1;
             printf("[Main] Receive exit instruction\n");
         }
